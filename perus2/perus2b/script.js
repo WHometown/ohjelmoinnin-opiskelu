@@ -66,7 +66,7 @@ var summa = l1 + l2 + l3 + l4 + l5;
 var karvo = summa / 5
 alert('summa on '+summa+' ja keskiarvo on '+karvo);
 }
-
+//???
 var luku2 = parseInt(document.getElementById('luku2').value);
 var lause
 function lauseMuuttuja() {
