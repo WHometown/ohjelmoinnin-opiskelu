@@ -4,12 +4,71 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="script.js">
     </script>
-    <link=rel "stylesheet" href="CSSperus3a.css"
+    <link rel="stylesheet" href="CSSperus3a.css">
     <title></title>
   </head>
   <body>
-    <section>
-      
-    </section>
+    <div id="laatikko1">
+      <form class="" action="index.html" method="post">
+      <p>Anna parillinen luku: <input type="text" id="parillinen" value=""></p>
+      <button type="button" name="button" onclick="parilliset()">Tulosta parilliset</button>
+      <p id="parilliset"></p>
+    </form>
+    </div>
+
+    <div id="laatikko2">
+      <form class="" action="index.html" method="post">
+      <p>Anna sana: <input type="text" id="sana" value=""></p>
+      <button type="button" name="button" onclick="salasanaksi()">Muuta salasanaksi</button>
+      <p id="salasana"></p>
+    </form>
+    </div>
+
+    <div id="laatikko3">
+      <form class="" action="index.html" method="post">
+      <p>Anna sana: <input type="text" id="sana2" value=""></p>
+      <button type="button" name="button" onclick="tunnusta()">onko ö?</button>
+      <p id="totuus"></p>
+    </form>
+    </div>
+
+    <div id="laatikko4">
+      <form class="" action="index.html" method="post">
+      <p>Anna luku, josta lasketaan kertoma: <input type="text" id="luku" value=""></p>
+      <button type="button" name="button" onclick="laske()">Laske kertoma</button>
+      <p id="kertoma"></p>
+    </form>
+    </div>
+
+    <div id="laatikko5">
+      <form class="" action="index.html" method="post">
+      <button type="button" name="button" onclick="tulostin()">tulosta</button>
+      <p id="tulostus"></p>
+    </form>
+    </div>
+
+    <div id="laatikko6">
+      <form class="" action="index.html" method="post">
+      <button type="button" name="button" onclick="kymmenenEkaa()">tulosta</button>
+      <p id="tulostettu"></p>
+    </form>
+    </div>
+
+    <div id="laatikko7">
+      <form class="" action="index.html" method="post">
+      <button type="button" name="button" onclick="laskija()">tulosta</button>
+      <p id="laskelma"></p>
+    </form>
+    </div>
+
+    <div id="laatikko3">
+      <form class="" action="index.html" method="post">
+      <p>Anna korotettava luku: <input type="text" id="korotettava" value=""></p><br>
+      <p>Anna potenssi: <input type="text" id="potenssi" value=""></p>
+      <button type="button" name="button" onclick="laskee()">laske</button>
+      <p id="potenssi2"></p>
+    </form>
+    </div>
+
   </body>
 </html>
