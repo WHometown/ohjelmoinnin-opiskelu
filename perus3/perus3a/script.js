@@ -5,7 +5,7 @@ function parilliset() {
     if (i % 2 == 0) {
       tulosta += i + " ";
     }
-  } //alert(tulosta);
+  }
   document.getElementById("parilliset").innerHTML = tulosta;
 }
 
@@ -14,7 +14,7 @@ function salasanaksi() {
   var sana = document.getElementById("sana").value;
   for (var i = 0; i < sana.length; i++) {
     tulosta += sana[i] + "Ö";
-  }// alert(tulosta);
+  }
   document.getElementById("salasana").innerHTML = tulosta;
 }
 
@@ -78,4 +78,19 @@ function laskee() {
   var potenssi = document.getElementById('potenssi').value;
   var tulosta = Math.pow(korotettava,potenssi);
   document.getElementById("potenssi2").innerHTML = tulosta;
+}
+
+function etsi() {
+  var l1 = document.getElementById('eka').value;
+  var l2 = document.getElementById('toka').value;
+  var l3 = document.getElementById('kolmas').value;
+  var l4 = document.getElementById('neljas').value;
+  var l5 = document.getElementById('viides').value;
+  var suurinPienin = 'suurin: ' + Math.max(l1,l2,l3,l4,l5) + ' pienin: ' + Math.min(l1,l2,l3,l4,l5);
+  document.getElementById("minMax").innerHTML = suurinPienin;
+}
+
+function salasanaksi2() {
+  var salasana = "";
+  var sana = document.getElementById('sana2').value; 
 }
