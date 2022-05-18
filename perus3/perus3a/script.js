@@ -91,6 +91,35 @@ function etsi() {
 }
 
 function salasanaksi2() {
-  var salasana = "";
-  var sana = document.getElementById('sana2').value; 
+  var kirjaimet = "abcdefghijklmnopqrstuvwxyzåäö";
+  var random = kirjaimet[Math.floor(Math.random() * kirjaimet.length)];
+  var sana = document.getElementById('sana3').value;
+  var tulosta = "";
+  for (var i = 0; i < sana.length; i++) {
+    tulosta += sana[i] + random;
+  }
+  document.getElementById("salasana2").innerHTML = tulosta;
+}
+
+function parillisetParittomat() {
+  var tulosta = "";
+  var pieni = parseInt(document.getElementById('pieni').value);
+  var suuri = parseInt(document.getElementById('suuri').value);
+  var summaParillinen = 0;
+  var summaPariton = 0;
+  var parilliset = "";
+  var parittomat = "";
+  for (var i = pieni; i <= suuri; i++) {
+    if (i % 2) {
+      summaParillinen += i;
+      parilliset += i.toString() + " ";
+    } else {
+      summaPariton += i;
+      parittomat += i.toString() + " ";
+    }
+  }
+  tulosta = "Parilliset numerot: " + parilliset + " ja niiden summa: " + parseInt(summaParillinen);
+  document.getElementById("summa2").innerHTML = tulosta;
+  tulosta = "Parittomat numerot: " + parittomat + " ja niiden summa: " + parseInt(summaPariton);
+  document.getElementById("summa3").innerHTML = tulosta;
 }
