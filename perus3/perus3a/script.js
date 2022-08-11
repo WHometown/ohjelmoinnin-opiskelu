@@ -62,7 +62,7 @@ function kymmenenEkaa() {
   for (var i = 1; i <= 10; i++) {
     tulosta += i + " ";
   }
-  document.getElementById("tulostus").innerHTML = tulosta;
+  document.getElementById("tulostettu").innerHTML = tulosta;
 }
 
 function laskija() {

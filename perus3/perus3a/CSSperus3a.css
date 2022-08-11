@@ -1,7 +1,51 @@
-.laatikko1 {
-  background-color: blue;
+.vieri {
+  width: 500px;
+  padding: 10px;
+  margin: 10px;
+  margin-right: 10px;
+  float:left;
 }
 
-.laatikko2 {
-  background-color: red;
+#laatikko1 {
+  background-color: #ff9999;
+}
+
+#laatikko2 {
+  background-color: #ffcc66;
+}
+
+#laatikko3 {
+  background-color: #99ff66;
+}
+
+#laatikko4 {
+  background-color: #9999ff;
+}
+
+#laatikko5 {
+  background-color: #99ffcc;
+}
+
+#laatikko6 {
+  background-color: #6699ff;
+}
+
+#laatikko7 {
+  background-color: #66ffff;
+}
+
+#laatikko8 {
+  background-color: #ffcc66;
+}
+
+#laatikko9 {
+  background-color: #ccffff;
+}
+
+#laatikko10 {
+  background-color: #33cccc;
+}
+
+#laatikko11 {
+  background-color: #ff99ff;
 }

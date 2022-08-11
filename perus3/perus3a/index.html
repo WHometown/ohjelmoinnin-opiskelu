@@ -9,7 +9,10 @@
   </head>
   <body>
 
-    <div id="laatikko1">
+    <div class=vieri id="laatikko1">
+      <h1>Tehtävä 1</h1>
+      <p>ohjelma, joka pyytää käyttäjältä parillista lukua ja tulostaa tämän
+         jälkeen kaikki parilliset luvut siihen asti poislukien 0:n</p>
       <form class="" action="index.html" method="post">
       <p>Anna parillinen luku: <input type="text" id="parillinen" value=""></p>
       <button type="button" name="button" onclick="parilliset()">Tulosta parilliset</button>
@@ -17,7 +20,11 @@
     </form>
     </div>
 
-    <div id="laatikko2">
+    <div class=vieri id="laatikko2">
+      <h1>Tehtävä 2</h1>
+      <p>ohjelma, joka muuntaa käyttäjän antaman sanan salasanaksi siten,
+         että laittaa joka toiseksi kirjaimeksi ison Ö-kirjaimen, eli jos sana on
+         Kaappi --> KÖaÖaÖpÖpÖiÖ</p>
       <form class="" action="index.html" method="post">
       <p>Anna sana: <input type="text" id="sana" value=""></p>
       <button type="button" name="button" onclick="salasanaksi()">Muuta salasanaksi</button>
@@ -25,7 +32,10 @@
     </form>
     </div>
 
-    <div id="laatikko3">
+    <div class=vieri id="laatikko3">
+      <h1>Tehtävä 3</h1>
+      <p>ohjelma, joka tarkastaa, onko antamassasi sanassa ö-kirjainta ja
+         kirjoittaa vastaukseksi joko: on tai ei ole</p>
       <form class="" action="index.html" method="post">
       <p>Anna sana: <input type="text" id="sana2" value=""></p>
       <button type="button" name="button" onclick="tunnusta()">onko ö?</button>
@@ -33,7 +43,10 @@
     </form>
     </div>
 
-    <div id="laatikko4">
+    <div class=vieri id="laatikko4">
+      <h1>Tehtävä 4</h1>
+      <p>ohjelma, joka laskee annetun luvun kertoman
+        (esim: 4 -> 4*3*2*1 = 24)</p>
       <form class="" action="index.html" method="post">
       <p>Anna luku, josta lasketaan kertoma: <input type="text" id="luku" value=""></p>
       <button type="button" name="button" onclick="laske()">Laske kertoma</button>
@@ -41,28 +54,39 @@
     </form>
     </div>
 
-    <div id="laatikko5">
+    <div class=vieri id="laatikko5">
+      <h1>Tehtävä 5</h1>
+      <p>ohjelma, joka tulostaa näytölle luvut 1-100, kuitenkin siten, että jos
+         luku on 3:lla jaollinen, tulostetaan hip ja viidellä jaollinen tulostetaan
+         heijaa ja jos sekä viidellä että kolmella jaollinen, tulostetaan hipheijaa</p>
       <form class="" action="index.html" method="post">
       <button type="button" name="button" onclick="tulostin()">tulosta</button>
       <p id="tulostus"></p>
     </form>
     </div>
 
-    <div id="laatikko6">
+    <div class=vieri id="laatikko6">
+      <h1>Tehtävä 6</h1>
+      <p>ohjelma, joka tulostaa 10 ensimmäistä numeroa</p>
       <form class="" action="index.html" method="post">
       <button type="button" name="button" onclick="kymmenenEkaa()">Kymmenen ensimmäistä</button>
       <p id="tulostettu"></p>
     </form>
     </div>
 
-    <div id="laatikko7">
+    <div class=vieri id="laatikko7">
+      <h1>Tehtävä 7</h1>
+      <p>ohjelma, joka laskee 10 ensimmäistä numeroa yhteen</p>
       <form class="" action="index.html" method="post">
       <button type="button" name="button" onclick="laskija()">Laske ekat kymmenen yhteen</button>
       <p id="laskelma"></p>
     </form>
     </div>
 
-    <div id="laatikko8">
+    <div class=vieri id="laatikko8">
+      <h1>Tehtävä 8</h1>
+      <p>ohjelma, joka kysyy käyttäjältä kahta lukua ja laskee ensimmäisen potenssiin
+        toinen esim. 5 ja 2 = 52 = 25</p>
       <form class="" action="index.html" method="post">
       <p>Anna korotettava luku: <input type="text" id="korotettava" value=""></p><br>
       <p>Anna potenssi: <input type="text" id="potenssi" value=""></p>
@@ -71,7 +95,9 @@
     </form>
     </div>
 
-    <div id="laatikko9">
+    <div class=vieri id="laatikko9">
+      <h1>Tehtävä 9</h1>
+      <p>ohjelma, joka etsii annetusta luvuista suurimman ja pienimmän arvon</p>
       <form class="" action="index.html" method="post">
         <p>Anna 1. luku: <input type="text" id="eka" value=""></p><br>
         <p>Anna 2. luku: <input type="text" id="toka" value=""></p><br>
@@ -83,7 +109,9 @@
     </form>
     </div>
 
-    <div id="laatikko10">
+    <div class=vieri id="laatikko10">
+      <h1>Tehtävä 10</h1>
+      <p>arpoo kirjaimen Ö:n sijasta</p>
       <form class="" action="index.html" method="post">
       <p>Anna muokattava salasana: <input type="text" id="sana3" value=""></p>
       <button type="button" name="button" onclick="salasanaksi2()">Muunna salasanaksi</button>
@@ -91,11 +119,14 @@
     </form>
     </div>
 
-    <div id="laatikko11">
+    <div class=vieri id="laatikko11">
+      <h1>Tehtävä 11</h1>
+      ohjelma, joka pyytää käyttäjältä kahta numeroa (jälkimmäisen tulee olla isompi)
+      ja tulostaa tuolla välillä parilliset ja parittomat numerot sekä niiden summat
       <form class="" action="index.html" method="post">
       <p>Anna pienempi luku: <input type="text" id="pieni" value=""></p><br>
       <p>Anna suurempi luku: <input type="text" id="suuri" value=""></p>
-      <button type="button" name="button" onclick="parillisetParittomat()">Näytä parilliest ja parittomat erikseen ja niiden summa</button>
+      <button type="button" name="button" onclick="parillisetParittomat()">Näytä parilliset ja parittomat erikseen ja niiden summa</button>
       <p id="summa2"></p>
       <p id="summa3"></p>
     </form>
