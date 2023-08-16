@@ -1,0 +1,31 @@
+body {
+    background-color: mediumseagreen;
+    padding-left: 600px;
+  }
+
+table, th, td {
+    border: 1px solid;
+  }
+  .box {
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    margin-right: 10px;
+    float:left;
+  }
+  
+  #laatikko1 {
+    background-color: #ff9999;
+  }
+  
+  #laatikko2 {
+    background-color: #ffcc66;
+  }
+  
+  #laatikko3 {
+    background-color: #99ff66;
+  }
+  
+  #laatikko4 {
+    background-color: #9999ff;
+  }
