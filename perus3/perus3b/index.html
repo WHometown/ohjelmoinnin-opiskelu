@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="index.js">
+    </script>
+    <link rel="stylesheet" href="index.css">
+    <title></title>
+  </head>
+  <body>
+
+    <div class=box id="laatikko1">
+        <h1>Tehtävä 1</h1>
+        <p>Ohjelma, jolle voi syöttää Scrabble-pelin sanan ja ohjelma laskee kirjainten pisteet seuraavasti</p>
+        <ul>
+            <li>A, E, I, N, S, T = 1p</li>
+            <li>O, Ä, K, L = 2p</li>
+            <li>U, M = 3p</li>
+            <li>Y, H, J, P, R, V = 4p</li>
+            <li>Ö, D = 7p</li>
+            <li>B, F, G = 8p</li>
+            <li>C = 10p</li>
+            <li>loput kirjaimet = 12p</li>
+          </ul>
+        <form class="" action="index.html" method="post">
+        <p>Anna sana, jonka pisteet lasketaan: <input type="text" id="scrabble" value=""></p>
+        <button type="button" name="button" onclick="pisteet()">Laske kirjainpisteet</button>
+        <p id="pisteytys"></p>
+
+        <div class=box id="laatikko2">
+            <h1>Tehtävä 1</h1>
+            <p>ohjelma, joka arpoo lottonumerot (7 kpl)</p>
+            <form class="" action="index.html" method="post">
+            <button type="button" name="button" onclick="arvo()">Arvo numerot</button>
+            <p id="lottonumerot"></p>
+
+      </form>
+      </div>
+  </body>
+</html>
