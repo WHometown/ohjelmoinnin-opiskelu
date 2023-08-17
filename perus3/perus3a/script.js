@@ -91,12 +91,12 @@ function etsi() {
 }
 
 function salasanaksi2() {
-  var kirjaimet = "abcdefghijklmnopqrstuvwxyzåäö";
-  var random = kirjaimet[Math.floor(Math.random() * kirjaimet.length)];
+  var kirjaimet = "abcdefghijklmnopqrstuvwxyzåäöABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ";
+  //var random = kirjaimet[Math.floor(Math.random() * kirjaimet.length)];
   var sana = document.getElementById('sana3').value;
   var tulosta = "";
   for (var i = 0; i < sana.length; i++) {
-    tulosta += sana[i] + random;
+    tulosta += sana[i] + kirjaimet[Math.floor(Math.random() * kirjaimet.length)];
   }
   document.getElementById("salasana2").innerHTML = tulosta;
 }
@@ -109,15 +109,21 @@ function parillisetParittomat() {
   var summaPariton = 0;
   var parilliset = "";
   var parittomat = "";
-  for (var i = pieni; i <= suuri; i++) {
-    if (i % 2) {
-      summaParillinen += i;
-      parilliset += i.toString() + " ";
-    } else {
-      summaPariton += i;
-      parittomat += i.toString() + " ";
+
+  if(pieni >= suuri) {
+    alert("VÄÄRIN !!!");
     }
-  }
+  else {
+    for (var i = pieni; i <= suuri; i++) {
+      if (i % 2) {
+        summaPariton += i;
+        parittomat += i.toString() + " ";
+      } else {
+        summaParillinen += i;
+        parilliset += i.toString() + " ";
+      }
+    }
+  } 
   tulosta = "Parilliset numerot: " + parilliset + " ja niiden summa: " + parseInt(summaParillinen);
   document.getElementById("summa2").innerHTML = tulosta;
   tulosta = "Parittomat numerot: " + parittomat + " ja niiden summa: " + parseInt(summaPariton);
